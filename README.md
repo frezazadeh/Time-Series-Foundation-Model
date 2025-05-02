@@ -36,7 +36,6 @@ python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
 python scripts/infer.py --ckpt supervised_model.pt \
                         --x x.npy --y y.npy --kpi_idx 6
 
-
 #5 : Plot
 python plot_kpi.py --y dataset/y.npy --pred y_pred.npy \
                    --ckpt supervised_model.pt --kpi_idx 6
