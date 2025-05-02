@@ -50,8 +50,6 @@ python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
 python scripts/infer.py --ckpt supervised_model.pt --x /content/x.npy
 ```
 
-See the **`examples/`** folder for notebook demos.
-
 ---
 
 © 2025 Farhad Rezazadeh· MIT License
