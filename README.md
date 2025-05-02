@@ -44,10 +44,10 @@ python scripts/pretrain.py --data_dir /path/to/tspile
 
 # 3 : fine‑tune
 python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
-                           --x /content/x.npy --y /content/y.npy
+                           --x /dataset/x.npy --y /datset/y.npy
 
 # 4 : run inference
-python scripts/infer.py --ckpt supervised_model.pt --x /content/x.npy
+python scripts/infer.py --ckpt supervised_model.pt --x /dataset/x.npy
 ```
 
 ---
