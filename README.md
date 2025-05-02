@@ -22,10 +22,6 @@ time‑series data, plus *supervised fine‑tuning* and *inference* scripts.
 Create a `.env` file in the project root (or copy `.env.example`) and paste your
 [Hugging Face access token](https://huggingface.co/settings/tokens):
 
-```bash
-cp .env.example .env
-echo "HF_TOKEN=<your_token>" >> .env
-```
 
 All scripts automatically load environment variables at runtime via `python‑dotenv`,
 so there’s no need to export the token manually.
@@ -37,6 +33,7 @@ so there’s no need to export the token manually.
 # 1 : clone & install
 git clone https://github.com/frezazadeh/Time-Series-Foundation-Model.git
 cd timeseries-foundation
+pip install -e .
 pip install -r requirements.txt
 
 # 2 : pre‑train
