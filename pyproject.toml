@@ -17,4 +17,5 @@ dependencies = [
     "huggingface_hub",
     "wandb",
     "matplotlib",
+    "python-dotenv",
 ]
