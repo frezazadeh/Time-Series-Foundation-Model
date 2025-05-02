@@ -34,7 +34,6 @@ so there’s no need to export the token manually.
 git clone https://github.com/frezazadeh/Time-Series-Foundation-Model.git
 cd timeseries-foundation
 pip install -e .
-pip install -r requirements.txt
 
 # 2 : pre‑train
 python scripts/pretrain.py --hf_token your_hf_token
