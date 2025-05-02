@@ -35,7 +35,7 @@ so there’s no need to export the token manually.
 
 ```bash
 # 1 : clone & install
-git clone https://github.com/<you>/timeseries-foundation.git
+git clone https://github.com/frezazadeh/Time-Series-Foundation-Model.git
 cd timeseries-foundation
 pip install -r requirements.txt
 
