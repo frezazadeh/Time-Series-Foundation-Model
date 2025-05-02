@@ -40,7 +40,7 @@ cd timeseries-foundation
 pip install -r requirements.txt
 
 # 2 : pre‑train
-HF_TOKEN=<your_hf_token> python scripts/pretrain.py --data_dir /path/to/tspile
+python scripts/pretrain.py --data_dir /path/to/tspile
 
 # 3 : fine‑tune
 python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
