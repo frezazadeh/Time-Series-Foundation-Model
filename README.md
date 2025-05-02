@@ -17,16 +17,6 @@ time‑series data, plus *supervised fine‑tuning* and *inference* scripts.
 * **W&B** logging hooks, HF snapshot download helper and reproducible seed utils.
 
 
-### Authentication
-
-Create a `.env` file in the project root (or copy `.env.example`) and paste your
-[Hugging Face access token](https://huggingface.co/settings/tokens):
-
-
-All scripts automatically load environment variables at runtime via `python‑dotenv`,
-so there’s no need to export the token manually.
-
-
 ## Quick start
 
 ```bash
@@ -36,7 +26,7 @@ cd timeseries-foundation
 pip install -e .
 
 # 2 : pre‑train
-python scripts/pretrain.py --hf_token your_hf_token
+python scripts/pretrain.py --hf_token your_hf_token ---> [Hugging Face access token](https://huggingface.co/settings/tokens)
 
 # 3 : fine‑tune
 python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
