@@ -54,4 +54,4 @@ See the **`examples/`** folder for notebook demos.
 
 ---
 
-© 2025 Your Name · MIT License
+© 2025 Farhad Rezazadeh· MIT License
