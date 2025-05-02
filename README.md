@@ -30,10 +30,16 @@ python scripts/pretrain.py --hf_token your_hf_token
 
 # 3 : fine‑tune
 python scripts/finetune.py --ckpt checkpoints/model_epoch_50.pt \
-                           --x dataset/x.npy --y dataset/y.npy
+                           --x dataset/x.npy --y dataset/y.npy --kpi_idx 6
 
 # 4 : run inference
-python scripts/infer.py --ckpt supervised_model.pt --x dataset/x.npy
+python scripts/infer.py --ckpt supervised_model.pt \
+                        --x x.npy --y y.npy --kpi_idx 6
+
+
+#5 : Plot
+python plot_kpi.py --y dataset/y.npy --pred y_pred.npy \
+                   --ckpt supervised_model.pt --kpi_idx 6
 ```
 
 ---
