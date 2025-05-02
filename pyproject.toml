@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsfound"
+version = "0.1.0"
+description = "Masked‑patch Transformer foundations for multivariate time‑series"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "tqdm",
+    "huggingface_hub",
+    "wandb",
+    "matplotlib",
+]
