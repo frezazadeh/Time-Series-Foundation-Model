@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Fine‑tune the backbone on a KPI prediction target."""
+import itertools 
 import argparse, os, numpy as np, torch, torch.nn as nn
 from sklearn.preprocessing import StandardScaler
 from torch.utils.data import DataLoader, Dataset
